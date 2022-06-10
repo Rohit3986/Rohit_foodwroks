@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page with Background Image Example</title>
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+
+<body style="background-color: rgb(101, 139, 189);">
+
+    <!-- partial:index.partial.html -->
+    <form action="/" method="POST">
+        {% csrf_token %}
+        <div class="form-field">
+            <input type="email" name="id" placeholder="Email / Username" required />
+        </div>
+        <div class="form-field">
+            <input type="password" name="pass" placeholder="Password" required />
+        </div>
+        <div class="form-field">
+            <button class="btn" type="submit">Log in</button>
+        </div>
+
+        <h3>logged out sucessfully!!!</h3>
+    </form>
+
+    <!-- partial -->
+
+</body>
+
+</html>
